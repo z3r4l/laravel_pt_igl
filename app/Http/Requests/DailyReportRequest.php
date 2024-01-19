@@ -29,7 +29,7 @@ class DailyReportRequest extends FormRequest
             'shipper'           => ['required'],
             'consignee'         => ['required'],
             'name_vessel'       => ['required'],
-            'voy'               => ['required'],
+            'voy'               => ['nullable'],
             'no_tax'            => ['nullable'],
             'date_faktur'       => ['nullable'],
             'no_bl'             => ['required'],

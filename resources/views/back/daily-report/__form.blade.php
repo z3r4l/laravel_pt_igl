@@ -10,7 +10,7 @@
         id="invalid-state" 
         placeholder="Masukan Jenis Dokumen" 
         name="type_document"
-        value="{{ $dailyReport->type_document }}" 
+        value="{{ $dailyReport->type_document ?? old('type_document') }}" 
         required>
         @error('type_document')
         <div class="invalid-feedback">
@@ -31,7 +31,7 @@
         id="invalid-state" 
         placeholder="Masukan No Dokumen" 
         name="no_pendaftaran" 
-        value="{{ $dailyReport->no_pendaftaran }}"
+        value="{{ $dailyReport->no_pendaftaran ?? old('no_pendaftaran') }}"
         required>
         @error('no_pendaftaran')
         <div class="invalid-feedback">
@@ -52,7 +52,7 @@
         id="invalid-state" 
         placeholder="Masukan Tanggal Dokumen" 
         name="date_document" 
-        value="{{ $dailyReport->date_document }}"
+        value="{{ $dailyReport->date_document ?? old('date_document')}}"
         required>
         @error('date_document')
         <div class="invalid-feedback">
@@ -73,7 +73,7 @@
         id="invalid-state" 
         placeholder="Masukan Shipper" 
         name="shipper"
-        value="{{ $dailyReport->shipper }}" 
+        value="{{ $dailyReport->shipper ?? old('shipper') }}" 
         required>
         @error('shipper')
         <div class="invalid-feedback">
@@ -94,7 +94,7 @@
         id="invalid-state" 
         placeholder="Masukan consignee" 
         name="consignee" 
-        value="{{ $dailyReport->consignee }}" 
+        value="{{ $dailyReport->consignee ?? old('consignee')}}" 
         required>
         @error('consignee')
         <div class="invalid-feedback">
@@ -115,7 +115,7 @@
         id="invalid-state" 
         placeholder="Masukan Vessel" 
         name="name_vessel" 
-        value="{{ $dailyReport->name_vessel }}"
+        value="{{ $dailyReport->name_vessel ?? old('name_vessel')}}"
         required>
         @error('name_vessel')
         <div class="invalid-feedback">
@@ -136,7 +136,7 @@
         id="invalid-state" 
         placeholder="Masukan Voy" 
         name="voy" 
-        value="{{ $dailyReport->voy }}"
+        value="{{ $dailyReport->voy ?? old('voy')}}"
         required>
         @error('voy')
         <div class="invalid-feedback">
@@ -157,7 +157,7 @@
         id="invalid-state" 
         placeholder="Masukan No BL" 
         name="no_bl" 
-        value="{{ $dailyReport->no_bl }}"
+        value="{{ $dailyReport->no_bl ?? old('no_bl')}}"
         required>
         @error('no_bl')
         <div class="invalid-feedback">
@@ -178,7 +178,7 @@
         id="invalid-state" 
         placeholder="Masukan No Faktur Pajak" 
         name="no_tax" 
-        value="{{ $dailyReport->no_tax }}">
+        value="{{ $dailyReport->no_tax ?? old('no_tax') }}">
         @error('no_tax')
         <div class="invalid-feedback">
             <i class="bx bx-radio-circle"></i>
@@ -198,7 +198,7 @@
         id="invalid-state" 
         placeholder="Masukan No Faktur Pajak" 
         name="date_faktur" 
-        value="{{ $dailyReport->date_faktur }}">
+        value="{{ $dailyReport->date_faktur ?? old('date_faktur') }}">
         @error('date_faktur')
         <div class="invalid-feedback">
             <i class="bx bx-radio-circle"></i>
@@ -218,7 +218,7 @@
         id="invalid-state" 
         placeholder="Masukan Keterangan Status" 
         name="status"
-        value="{{ $dailyReport->status }}"
+        value="{{ $dailyReport->status ?? old('status') }}"
         >
         @error('status')
         <div class="invalid-feedback">

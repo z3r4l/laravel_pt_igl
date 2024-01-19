@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('shipper');
             $table->string('consignee');
             $table->string('name_vessel');
-            $table->string('voy');
+            $table->string('voy')->nullable();
             $table->string('no_tax')->nullable();
             $table->string('date_faktur')->nullable();
             $table->string('no_bl');
